@@ -1,22 +1,19 @@
 ---
 title: Home
-headline: Welcome to Eleventy Notes
+headline: Welcome to Pipeline Workflow Guide
 panel: false
-nextPage: "[[Getting started]]"
 ---
 
-Welcome to **Eleventy Notes**, an opinionated template for publishing your personal notes, documentation, or even your blog! Built with [Eleventy](https://11ty.dev/), the powerful static site generator, Eleventy Notes is packed with features you'll love.
+Welcome to **Pipeline Worflow Guide**, an opinionated guide to develop, deploy, automate and monitor data pipelines from ingestion to models. Our data pipelines are built in Python and SQL, version controlled in git, and enabled by a number of standard tools.
 
-With Eleventy Notes, you can:
+Pipeline Worfklow Guide helps you understand how to best use the following tech stack:
+- ✅ Python
+- ✅ SQL
+- ✅ dbt
+- ✅ Prefect
+- ✅ S3 Object Storage
+- ✅ SQL Database or Lakehouse
+- ✅ Azure, AWS and GCP Cloud
+- and many more...
 
-- ✅ Create [[Wikilinks]] and backlinks to easily navigate your content
-- ✅ Organize your content with [[Tags]] for easy searching and filtering
-- ✅ Quickly find what you need with a [[Search|client-side search]]
-- ✅ Choose from two [[Themes]] and multiple color schemes to match your style
-- ✅ Customize your [[Sidebar]] with support for folders and subfolders
-- ✅ Enjoy a lightweight and fast experience, with minimal JavaScript
-- ... and much more!
-
-Whether you're a blogger, developer, or just someone who loves to write, Eleventy Notes has everything you need to publish your content. So what are you waiting for? Get started today by reading our [[Getting started]] guide and start sharing your thoughts with the world!
-
-Built with ❤️ by [Sandro Roth](https://sandroroth.com/)
+Whether you are a data analyst, data engineer or data scientist, our guide has you covered. Ever wondered how to avoid developing tech debt? Or what best practices you can leverage for developing data models? Here we are documenting exactly that.

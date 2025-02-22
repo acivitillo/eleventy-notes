@@ -2,9 +2,9 @@
 import { defineConfig, createNotesQuery } from "./.app/app-config.js";
 
 export default defineConfig({
-  title: "Eleventy Notes",
+  title: "Data Modelling Workflow",
   description:
-    "A simple, lightweight, and flexible note-taking template for Eleventy.",
+    "A detailed guide for developing data models as code following good engineering practices",
   editThisNote: {
     url: "https://github.com/rothsandro/eleventy-notes/edit/{{branch}}/{{file}}",
   },
@@ -23,35 +23,37 @@ export default defineConfig({
   sidebar: {
     links: [
       {
-        url: "https://github.com/rothsandro/eleventy-notes",
-        label: "GitHub / Support",
+        url: "https://github.com/acivitillo/eleventy-notes/",
+        label: "GitHub",
         icon: "github",
       },
       {
-        url: "https://www.buymeacoffee.com/sandroroth",
-        label: "Buy me a coffee",
-        icon: "coffee",
+        url: "#",
+        label: "Workshops",
+        icon: "notebook-pen",
       },
     ],
     sections: [
       {
-        label: "Introduction",
+        label: "Getting Started",
         groups: [
           {
             query: createNotesQuery({
-              pattern: "^/[^/]+$",
+              //pattern: "^/[^/]+$",
+              pattern: "^/Start/",
             }),
           },
         ],
       },
       {
-        label: "Guides",
+        label: "Data Flow",
         groups: [
           {
-            label: "Writing Notes",
+            label: "Storage Layers",
             query: createNotesQuery({
-              pattern: "^/Writing/",
+              pattern: "^/Storage/",
               tree: {
+                expanded: false,
                 replace: {
                   "^/\\w+": "",
                 },
@@ -59,16 +61,11 @@ export default defineConfig({
             }),
           },
           {
-            label: "Organizing Notes",
+            label: "Orchestration and Observability",
             query: createNotesQuery({
-              pattern: "^/Organizing/",
-            }),
-          },
-          {
-            label: "Core Features",
-            query: createNotesQuery({
-              pattern: "^/Features/",
+              pattern: "^/Orchestration/",
               tree: {
+                expanded: false,
                 replace: {
                   "^/\\w+": "",
                 },
@@ -76,28 +73,19 @@ export default defineConfig({
             }),
           },
           {
-            label: "Deployment",
+            label: "Data Governance",
             query: createNotesQuery({
-              pattern: "^/Deployment/",
-            }),
-          },
-        ],
-      },
-      {
-        label: "Releases",
-        groups: [
-          {
-            query: createNotesQuery({
-              pattern: "^/Releases/",
+              pattern: "^/Governance/",
+              tree: {
+                expanded: false,
+                replace: {
+                  "^/\\w+": "",
+                },
+              },
             }),
           },
         ],
       },
     ],
-  },
-  tags: {
-    map: {
-      "dynamic-content": "dynamic content",
-    },
-  },
+  }
 });
