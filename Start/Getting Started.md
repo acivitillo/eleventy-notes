@@ -6,3 +6,4 @@ Creating an end-to-end data flow is a good way to understand the full flow. We w
 - Modelling
 - Data Governance
 
+![Data Platform Reference Architecture](data_platform.webp "Data Platform Architecture")

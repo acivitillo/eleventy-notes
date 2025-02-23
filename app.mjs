@@ -2,7 +2,7 @@
 import { defineConfig, createNotesQuery } from "./.app/app-config.js";
 
 export default defineConfig({
-  title: "Data Modelling Workflow",
+  title: "Automated Data Pipelines: A Code-First Guide",
   description:
     "A detailed guide for developing data models as code following good engineering practices",
   editThisNote: {
